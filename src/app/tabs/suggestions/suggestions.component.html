@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sugesstions
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div>
+  <span style="  font: menu;
+  font-size: 23px;
+  color: white;">
+    Please enter any suggestions, compliments or complaints in the 
+    box below.
+  </span>
+  <span class="emoji">&#x1F601;</span>
+
+</div>
+
+
+<ion-item>
+  <ion-textarea style="color:white;" placeholder="Enter message here..." [(ngModel)]="message"></ion-textarea>
+</ion-item>
+<span *ngIf="showAlert" style="color:red;">Please enter a message before sending</span>
+
+<div style="margin-left: 130px;">
+  <ion-button (click)="sendEmail()"> send email</ion-button>
+
+</div>
+<div style="    margin-top: 96px;
+margin-bottom: 96px;">
+
+  <ion-button expand="full" (click)="dismiss()">Back to main menu</ion-button>
+
+</div>

@@ -1,0 +1,15 @@
+ion-textarea {
+    height: 265px;
+    margin-top: 105px;
+    background-color: midnightblue;
+}
+
+.emoji {
+    font-family: "Symbola"
+}
+
+@font-face {
+    font-family: "Symbola";
+    src: url("/fonts/Symbola-Emoji.woff") format("woff"),
+      url("/fonts/Symbola-Emoji.ttf") format("ttf");
+  }
